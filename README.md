@@ -72,7 +72,7 @@ Json :
         name : "Total Group", //unique, notnull
         url : "https://", //unique, notnull
         logo : "https://", 
-        ?namechef : "gokicorp",
+        ?namechef : "toako",
         firstsector : [0, 12],
         ?secondesector : [5]
     }
