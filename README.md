@@ -62,7 +62,7 @@ Reponce :
 ### POST /DiscordCommunity/new
 > Enregistre un nouveaux group discord
 
-Authentification : ?
+Authentification : open
 
 Json : 
 ```json
