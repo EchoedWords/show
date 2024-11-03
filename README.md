@@ -1,50 +1,48 @@
 # **SimcompanieCommunity**
 
-# readme
+# Readme
 
 # Sommaire
 
- - [API](#api)
-    - [Gestionaire des discord communautere](#Gestionaire-des-discord-communautere)
- 
-# api
+- [API](#api)
+    - [Gestionnaire des Discord communautaires](#gestionnaire-des-discord-communautaires)
 
-## Gestionaire des discord communautere
+# API
+
+## Gestionnaire des Discord communautaires
 
 ### GET /DiscordCommunity/get
-> Renvois les group discord ciblé
+> Renvoie les groupes Discord ciblés.
 
-Authentification : open
+Authentification : ouverte
 
-Query :
+Paramètres de requête :
 - **firstsector**
-    - Cible les serveur avec comme principal secteur ...
+    - Cible les serveurs avec comme secteur principal les identifiants spécifiés.
     - `=SECTEUR&` || exemple `=0&12&14`
-- **?secondesector**
-    - Cible les serveur avec comme seconde secteur ...
+- **?secondsector**
+    - Cible les serveurs avec comme second secteur les identifiants spécifiés.
     - `=SECTEUR&` || exemple `=0&12&14`
 - **langue**
-    - Cible les langue souhaité
+    - Cible les serveurs selon les langues spécifiées.
     - `=LANGUE&` || exemple `=FR&RU`
 - **minmember**
-    - Cible les serveur avec un minimum de membre
+    - Cible les serveurs avec un nombre minimum de membres.
     - `=NUMBER` || exemple `=200`
-- **maxmember**
-    - Cible les serveur avec un maximum de membre
+- **maxMembres**
+    - Cible les serveurs avec un nombre maximum de membres.
     - `=NUMBER` || exemple `=500`
-- **?name**
-    - Cible les serveur avec le nom
-    - `=NOM` || exemple `=group total`
-- **?minscore**
-    - Cible les serveur avec un minimum de score
+- **?nom**
+    - Cible les serveurs avec un nom correspondant.
+    - `=NOM` || exemple `=Groupe Total`
+- **?scoreMin**
+    - Cible les serveurs avec un score minimum.
     - `=SCORE` || exemple `=4`
- - **?partner**
-    - Cible les serveur partener
-    - `=BOOLEAN` || exemple `=true`
+- **?partenaire**
+    - Cible les serveurs partenaires.
+    - `=BOOLÉEN` || exemple `=true`
 
-
-
-Reponce :
+Réponse :
 ```json
   [
   {
@@ -60,11 +58,11 @@ Reponce :
 ```
 
 ### POST /DiscordCommunity/new
-> Enregistre un nouveaux group discord
+> Enregistre un nouveau groupe Discord.
 
-Authentification : open
+Authentification : ouverte
 
-Json : 
+JSON :
 ```json
 {
     auth : 
@@ -79,8 +77,7 @@ Json :
 }
 ```
 
-
-Reponce :
+Réponse :
 ```json
   [
     {
